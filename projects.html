@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+     body{
+        font-family:"Caveat", cursive;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(135deg in hsl,#EED3D9 0%,#CCD3CA 25%,#F5E8DD 50%,#B5C0D0 100%);
+    }
+      .center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nameLetter{
+    font-size: 100px;
+    font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px;
+
+ 
+}
+
+#S{
+    color: #78A083;
+    animation: animate 2s backwards infinite ease-in;
+}
+
+#A{
+    color: #E1AFD1;
+    animation: animate 3s forwards infinite ease-in-out;
+}
+
+#B{
+    color: #AD88C6;
+    animation: animate 2.5s backwards infinite ease-in;
+}
+
+#I{
+    color: #7469B6;
+    animation: animate 3.5s forwards infinite ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+transform: translate(0) scale(1);
+    }
+
+    50%{
+        transform: translate(0, -20px) scale(1.2);
+    }
+    
+    100%{
+        transform: translate(0) scale(1);
+    }
+}
+
+
+
+</style>
+<body>
+    <div class="center">
+        <div class="nameLetter" id="S">S</div>
+        <div class="nameLetter" id="A">A</div>
+        <div class="nameLetter" id="B">B</div>
+        <div class="nameLetter" id="I">I</div>
+    </div>
+</body>
+</html>
